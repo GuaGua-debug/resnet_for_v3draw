@@ -55,7 +55,7 @@ def get_result(label, pred):
     return result
 
 
-def main():
+if __name__ == "__main__":
     logg = 0
     if logg:
         logging.basicConfig(filename=log_path, filemode='w',
@@ -143,7 +143,3 @@ def main():
         plt.title('Confusion Matrix')
         plt.savefig(pic_path)
         # plt.show()
-
-
-if __name__ == "__main__":
-    main()
